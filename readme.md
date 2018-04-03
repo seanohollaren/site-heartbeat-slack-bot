@@ -57,15 +57,17 @@ To allow your monitor to post to Slack when it needs to, you'll need to create a
 
 ## Testing
 
-First, install the functions dependencies with:
+First, install the project's dependencies with:
 
 `npm install`
 
+<br>
 
 To test the lambda locally before deploying, invoke the function with:
 
 `serverless invoke local --function heartbeat`
 
+<br>
 
 To test the live function after it has been deployed to AWS, invoke it with:
 
