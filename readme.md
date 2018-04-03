@@ -1,6 +1,6 @@
 # Website Health Monitor Slack Bot
 
-A lambda-based endpoint monitor which performs a request at specified intervals and reports to Slack if the web page or service is down.
+A lambda-based monitor which watches a web page or service and posts an alert to Slack if goes down.
 
 <br>
 
