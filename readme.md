@@ -1,4 +1,4 @@
-# Site Heartbeat Monitor Slack Bot
+# Website Health Monitor Slack Bot
 
 A lambda-based endpoint monitor which performs a request at specified intervals and reports to Slack if the web page or service is down.
 
