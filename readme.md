@@ -51,7 +51,7 @@ To allow your monitor to post to Slack when it needs to, you'll need to create a
 
 8. Choose the channel you'd like your bot to be able to post to
 
-9. Copy the generated Webhook URL and paste it in the slackEndpoint property in the code's config.yml file
+9. Copy the generated Webhook URL and paste it in the `slackEndpoint` property in the code's config.yml file
 
 <br>
 
