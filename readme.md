@@ -2,6 +2,7 @@
 
 A lambda-based endpoint monitor which performs a request at specified intervals and reports to Slack if the web page or service is down.
 
+<br>
 
 ## Configuration
 
@@ -15,6 +16,7 @@ The monitor's options are configured in `config.yml`
 
 **`interval`** - The frequency at which the monitor should check the `serviceEndpoint`.  Accepts minutes/hours/days.
 
+<br>
 
 ## Deployment
 
@@ -26,6 +28,7 @@ Once you have Serverless installed and your AWS credentials are configured for y
 
 `serverless deploy`
 
+<br>
 
 ## Setting Up a Slack Integration
 
@@ -50,6 +53,7 @@ To allow your monitor to post to Slack when it needs to, you'll need to create a
 
 9. Copy the generated Webhook URL and paste it in the slackEndpoint property in the code's config.yml file
 
+<br>
 
 ## Testing
 
@@ -67,6 +71,7 @@ To test the live function after it has been deployed to AWS, invoke it with:
 
 `serverless invoke --function heartbeat`
 
+<br>
 
 ## Updating the Code
 
