@@ -43,7 +43,7 @@ To allow your monitor to post to Slack when it needs to, you'll need to create a
 
 4. Click Create App
 
-5. Now we'll give your bot the ability to send a message to a channel to alert you by creating a new Incoming Webhook integration
+5. Now we'll give your bot the ability to send a message to a channel by creating a new Incoming Webhook integration
 
 6. Under Features > Incoming Webhooks, toggle it On
 
@@ -68,6 +68,7 @@ To test the lambda locally before deploying, invoke the function with:
 `serverless invoke local --function heartbeat`
 
 <br>
+
 
 To test the live function after it has been deployed to AWS, invoke it with:
 
