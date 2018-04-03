@@ -1,0 +1,21 @@
+{
+  "name": "lambda-heartbeat",
+  "version": "1.0.0",
+  "description": "A lambda which performs a request to a specified endpoint at a specified interval",
+  "main": "handler.js",
+  "scripts": {
+    "start": "serverless invoke local --function heartbeat"
+  },
+  "author": "Sean O'Hollaren <sean.ohollaren@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "bluebird-retry": "^0.11.0",
+    "request": "^2.81.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.2.0"
+  }
+}

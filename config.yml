@@ -1,0 +1,13 @@
+# Endpoint you want to monitor
+serviceEndpoint: https://example.com
+
+# HTTP method to use for heartbeat request (GET or POST)
+# If you use the POST method, the monitor will send the 
+# object defined in payload.json
+httpMethod: GET
+
+# Slack endpoint to post alert to (see Readme for details)
+slackEndpoint: https://hooks.slack.com/services/asdf
+
+# Interval at which to perform heartbeat check
+interval: rate(10 minutes)

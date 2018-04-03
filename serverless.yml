@@ -1,0 +1,24 @@
+service: endpoint-heartbeat
+
+custom: ${file(config.yml)}
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+  # If you'd like to specify an existing IAM Role ARN for the lambda to execute as, put it here
+  # role: insertIAMRoleARNHere
+
+functions:
+  heartbeat:
+    name: endpoint-heartbeat
+    memorySize: 128
+    handler: handler.heartbeat
+    timeout: 60
+
+    environment:
+      serviceEndpoint: ${self:custom.serviceEndpoint}
+      slackEndpoint: ${self:custom.slackEndpoint}
+      httpMethod: ${self:custom.httpMethod}
+
+    events:
+      - schedule: ${self:custom.interval}
