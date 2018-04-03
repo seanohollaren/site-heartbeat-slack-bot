@@ -78,3 +78,11 @@ To test the live function after it has been deployed to AWS, invoke it with:
 If you made updates to your function after it has been deployed, you can push those updates to AWS by using the same Serverless deploy command:
 
 `serverless deploy`
+
+<br>
+
+## Cost
+
+Since the bot is lambda-based, it should fall well within AWS Lambda's Free Tier, so it will cost you nothing.
+
+If you have enough other lambda functions running that you are no longer in the free tier, the estimated cost of this lambda at the default 10 minute interval is $0.02 per month.
