@@ -30,7 +30,7 @@ function performRequest(uri, body) {
     }, (err, res) => {
 
       if (err || res.statusCode !== 200) {
-        console.log('Failed request body: ', res.body);
+        if (res) console.log('Failed request body: ', res.body);
         return reject(err || new Error(`Received a non-200 status code: ${res.statusCode}`));
       }
 
